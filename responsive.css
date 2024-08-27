@@ -1,0 +1,101 @@
+* {
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Arial", sans-serif;
+    background-color: rgb(219, 221, 222);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.virsus {
+    background-color: rgb(81, 79, 79);
+    color: rgb(248, 248, 248);
+}
+
+.antraste {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.meniu {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    gap: 20px;
+    padding: 10px;
+    
+}
+
+nav ul li a{
+    color: aliceblue;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    border-radius: 200px;
+    padding: 10px 15px;
+}
+
+nav ul li a:hover {
+    background-color: #3949ab;
+}
+
+.skyrius1 {
+    color: rgb(50, 49, 49);
+    height: 100px;
+}
+
+h2 {
+    font-size: 17px;
+    padding: 10px;
+    text-align: center;
+    padding-top: 20px;
+
+}
+
+.uzrasas {
+    font-size: 13px;
+    background-color: rgb(168, 166, 166);
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+}
+
+.poraste {
+    color: aliceblue;
+    font-size: 13px;
+    background-color: rgb(81, 79, 79);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 600px) {
+    .antraste {
+    font-size: 50px;
+    }
+}
+
+@media (max-width: 600px) {
+    .meniu {
+    flex-direction:column;
+    }
+}
+
+@media (max-width: 600px) {
+    .skyrius1 {
+    background-color: aqua;
+    }
+}
+
+@media (max-width: 600px) {
+    .uzrasas {
+        display: none;
+    }
+}
